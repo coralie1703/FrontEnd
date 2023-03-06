@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+/* CONTENU */
+
+h1{
+    text-align: center;
+    margin: 2% 0;
+}
+
+h2{
+    text-align: center;
+    margin: 4% 0 0 0;
+}
+
+main{
+    padding: 5% 5%;
+}
+
+aside{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 10% 0 0;
+}
+button{
+    background-color: forestgreen;
+}

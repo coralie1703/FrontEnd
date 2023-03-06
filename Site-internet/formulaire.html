@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire enquête stagiaires</title>
+</head>
+<body>
+    <h1>Nous lançons une grande enquête sur les anciens stagiaires</h1>
+    <p>Merci de nous répondre</p>
+    <form action="http://bienvu.net/script.php" method="post">
+        <fieldset>
+            <legend>Vos coordonnées :</legend>
+            Nom: <input type="text"><br>
+            Prénom: <input type="text"><br>
+            Date de naissance: <input type="text"><br>
+            Votre adresse: <input type="text"><br>
+            Votre ville: <input type="text"><br>
+            Votre code postal: <input type="text"><br>
+            Votre e-mail: <input type="text">
+        </fieldset>
+        <br>
+        <fieldset>
+            <input type="radio" name="sexe" value="Homme"> Vous êtes un homme
+            <input type="radio" name="sexe" value="Femme"> Vous êtes une femme
+        </fieldset>
+        <br>
+        <select name="metier">
+            <option value="Developpeur">Développeur</option>
+            <option value="Autre">Autre</option>
+        </select><br>
+        si vous avez répondu autre, précisez: <input type="text"><br>
+        <br>
+        <select name="prix">
+            <option value="1000"><1000€</option>
+            <option value="500"><500€</option>
+            <option value="1500"><1500€</option>
+        </select><br>
+        En quelle année avez-vous suivi le stage AFPA ? <input type="text"><br>
+        <br>
+        <textarea name="commentaire" rows="5" cols="30">Vos commentaires</textarea>
+        <p><b>Merci d'avoir répondu au questionnaire</b></p>
+        <input type="submit" value="valider">
+        <input type="submit" value="annuler">
+    </form>
+</body>
+</html>
