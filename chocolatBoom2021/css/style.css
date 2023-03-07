@@ -1,0 +1,57 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(24, 136, 127);
+}
+#logo{
+    display: flex;
+    align-items: center;
+}
+h2{
+    width: 90%;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.4em;
+    border-radius: 8%;
+    background-color: rgb(66, 24, 7);
+    color: white;
+    text-align: center;
+    padding: 1%;
+}
+nav{
+    font-size: 1.6em;
+    background-color: rgb(66, 24, 7);
+    color: white;
+    margin: 0 3%;
+    text-align: center;
+    padding: 1% 0;
+}
+nav>a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    background-color: rgb(78, 59, 51);
+    padding: 1%;
+}
+img{
+    border-radius: 2%;
+    margin: 0%;
+}
+main{
+    display: flex;
+}
+section{
+    width: 70%;
+    padding: 3%;
+}
+
+aside{
+    width: 30%;
+    background-color: white;
+    margin: 0 3% 0 0;
+}
+aside>p{
+    background-color: white;
+    padding: 3%;
+}
