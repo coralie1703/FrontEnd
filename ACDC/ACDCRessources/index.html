@@ -16,11 +16,11 @@
     <header>
         <img id="logo" src="img/ac-dc-2.png" alt="logo acdc">
         <nav>
-            <a href="#">Accueil</a>
-            <a href="#">Membres</a>
-            <a href="#">Discographie</a>
-            <a href="#">Agenda des concerts</a>
-            <a href="#">Contact</a>
+            <a href="#carouselExampleIndicators">Accueil</a>
+            <a href="#members">Membres</a>
+            <a href="#discographie">Discographie</a>
+            <a href="#tableau">Agenda des concerts</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
@@ -63,7 +63,7 @@
     <!--                  MEMBRES            -->
 
     <h2>Les membres du groupe</h2>
-    <section class="members">
+    <section id="members">
         <figure class="figure">
             <img src="img/brian-johnson.png" class="figure-img img-fluid rounded" alt="Brian Johnson">
             <figcaption class="figure-caption">Brian Johnson (Chant)</figcaption>
@@ -89,7 +89,7 @@
     <!--               Discographie                   -->
 
     <h2>Discographie</h2>
-    <div class="discographie">
+    <div id="discographie">
         <div class="card" style="width: 18rem;">
             <img src="img/Discographie/High-voltage-1975.jpg" class="card-img-top" alt="1975 High Voltage">
             <div class="card-body">
@@ -175,7 +175,7 @@
     <!--                     CONCERTS                         -->
 
     <h2>Les dates des concerts</h2>
-    <div class="tableau">
+    <div id="tableau">
     <table class="table table-dark table-borderless table-hover">
         <thead class="titre">
             <tr>
@@ -228,27 +228,29 @@
     <!--                     CONTACT                   -->
 
     <h2>Contact</h2>
-    <form class="row g-1 needs-validation" novalidate></form>
-        <div class="row">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Prénom" aria-label="First name">
+    <div id="contact">
+        <form class="row g-1 needs-validation" novalidate></form>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Prénom" aria-label="First name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nom" aria-label="Last name">
+                </div>
             </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Nom" aria-label="Last name">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com">
             </div>
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"></label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"></label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Votre message ici"
-            rows="3"></textarea>
-        </div>
-        <button class="btn btn-primary" type="submit">Envoyer</button>
-        <button class="btn btn-primary" type="cancel">Annuler</button>
-    </form>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Votre message ici"
+                rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Envoyer</button>
+            <button class="btn btn-primary" type="cancel">Annuler</button>
+        </form>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
